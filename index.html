@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>PRODUCT</li>
+            <li>GALLERY</li>
+            <li>BLOG</li>
+            <li>INVENTORY</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <div class="flex-container">
+            <!-- Profile Name and Buttons -->
+            <div class="fc-content">
+                <div class="profile-name">
+                    <p class="name" id="bioName">Nama Saya</p>
+                    <p class="job" id="bioRole">Back End Developer</p>
+                    <button class="btn-contact" onclick="editFunction()">Edit</button>
+                    <button class="btn-resume">Resume</button>
+                </div>
+            </div>
+            <!-- Vertical Divider -->
+            <div class="fc-content">
+                <div class="v1"></div>
+            </div>
+            <!-- Profile Information Labels -->
+            <div class="fc-content">
+                <div class="info-profile-detail">
+                    <ul>
+                        <li>Availability</li>
+                        <li>Usia</li>
+                        <li>Lokasi</li>
+                        <li>Pengalaman</li>
+                        <li>Email</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Colon Separators -->
+            <div class="fc-content">
+                <ul>
+                    <li>:</li>
+                    <li>:</li>
+                    <li>:</li>
+                    <li>:</li>
+                    <li>:</li>
+                </ul>
+            </div>
+            <!-- Profile Information Values -->
+            <div class="fc-content">
+                <ul class="info-profile-detail-ul">
+                    <li id="bioAvailability">Full Time</li>
+                    <li id="bioAge">25</li>
+                    <li id="bioLokasi">Bali</li>
+                    <li id="bioExperience">1</li>
+                    <li id="bioEmail">email@blablabla.com</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form for Editing Profile Information -->
+    <div class="container">
+        <form action="" id="editPanel">
+            <label for="inputName">Nama</label> <br>
+            <input id="inputName" type="text"> <br>
+            <label for="inputRole">Role</label> <br>
+            <input id="inputRole" type="text"> <br>
+            <label for="inputAvailability">Availability</label> <br>
+            <input id="inputAvailability" type="text"> <br>
+            <label for="inputAge">Age</label> <br>
+            <input id="inputAge" type="number"> <br>
+            <label for="inputLokasi">Lokasi</label> <br>
+            <input id="inputLokasi" type="text"> <br>
+            <label for="inputExperience">Years Experience</label> <br>
+            <input id="inputExperience" type="number"> <br>
+            <label for="inputEmail">Email</label> <br>
+            <input id="inputEmail" type="text"> <br>
+            <input type="button" class="btn-submit" onclick="submitBiodata()" value="Submit">
+        </form>
+    </div>
+
+    <!-- JavaScript File for Functionality -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
